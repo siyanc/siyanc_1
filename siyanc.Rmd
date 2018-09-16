@@ -8,7 +8,24 @@ output: html_document
 set.seed(1)
 V1 = runif(10, 0, 5)
 V1
-V2= c(V1 > 2)
-V3 = c("a", "b", "c", "d", "e", "f", "g")
+V2 = c(V1 > 2)
+V3 = c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j")
+V4 = c("boy", "girl", "girl", "girl", "girl","girl", "girl", "girl", "boy", "boy")
+data.frame(V1, V2, V3, V4)
+mean(V1)
+mean(V2)
+mean(V3)
+mean(V4)
 ```
+```{r, eval = FALSE}
+transfer_V2 = as.numeric(V2)
+transfer_V3 = as.numeric(V3)
+transfer_V4 = as.numeric(V4)
+```
+```{r}
+transfer_C_to_N = as.factor(V2)
+
+transfer_F_to_C = as.character(V4)
+```
+
 

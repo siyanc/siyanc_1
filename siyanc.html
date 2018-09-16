@@ -132,8 +132,39 @@ V1 = runif(10, 0, 5)
 V1</code></pre>
 <pre><code>##  [1] 1.3275433 1.8606195 2.8642668 4.5410389 1.0084097 4.4919484 4.7233763
 ##  [8] 3.3039890 3.1455702 0.3089314</code></pre>
-<pre class="r"><code>V2= c(V1 &gt; 2)
-V3 = c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;)</code></pre>
+<pre class="r"><code>V2 = c(V1 &gt; 2)
+V3 = c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;)
+V4 = c(&quot;boy&quot;, &quot;girl&quot;, &quot;girl&quot;, &quot;girl&quot;, &quot;girl&quot;,&quot;girl&quot;, &quot;girl&quot;, &quot;girl&quot;, &quot;boy&quot;, &quot;boy&quot;)
+data.frame(V1, V2, V3, V4)</code></pre>
+<pre><code>##           V1    V2 V3   V4
+## 1  1.3275433 FALSE  a  boy
+## 2  1.8606195 FALSE  b girl
+## 3  2.8642668  TRUE  c girl
+## 4  4.5410389  TRUE  d girl
+## 5  1.0084097 FALSE  e girl
+## 6  4.4919484  TRUE  f girl
+## 7  4.7233763  TRUE  g girl
+## 8  3.3039890  TRUE  h girl
+## 9  3.1455702  TRUE  i  boy
+## 10 0.3089314 FALSE  j  boy</code></pre>
+<pre class="r"><code>mean(V1)</code></pre>
+<pre><code>## [1] 2.757569</code></pre>
+<pre class="r"><code>mean(V2)</code></pre>
+<pre><code>## [1] 0.6</code></pre>
+<pre class="r"><code>mean(V3)</code></pre>
+<pre><code>## Warning in mean.default(V3): argument is not numeric or logical: returning
+## NA</code></pre>
+<pre><code>## [1] NA</code></pre>
+<pre class="r"><code>mean(V4)</code></pre>
+<pre><code>## Warning in mean.default(V4): argument is not numeric or logical: returning
+## NA</code></pre>
+<pre><code>## [1] NA</code></pre>
+<pre class="r"><code>transfer_V2 = as.numeric(V2)
+transfer_V3 = as.numeric(V3)
+transfer_V4 = as.numeric(V4)</code></pre>
+<pre class="r"><code>transfer_C_to_N = as.factor(V2)
+
+transfer_F_to_C = as.character(V4)</code></pre>
 </div>
 
 
