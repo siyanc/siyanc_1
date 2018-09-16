@@ -128,7 +128,12 @@ $(document).ready(function () {
 <div id="generating-a-random-sample-from-a-uniform-distribution-05" class="section level1">
 <h1>Generating a random sample from a uniform distribution [0,5]</h1>
 <pre class="r"><code>set.seed(1)
-V1 = runif(10, 0, 5)</code></pre>
+V1 = runif(10, 0, 5)
+V1</code></pre>
+<pre><code>##  [1] 1.3275433 1.8606195 2.8642668 4.5410389 1.0084097 4.4919484 4.7233763
+##  [8] 3.3039890 3.1455702 0.3089314</code></pre>
+<pre class="r"><code>V2= c(V1 &gt; 2)
+V3 = c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;)</code></pre>
 </div>
 
 
